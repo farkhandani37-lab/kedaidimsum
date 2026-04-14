@@ -1,0 +1,39 @@
+/* Custom Styles */
+body { 
+    background-color: #fffafb; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Efek Navigasi Transparan (Blur) */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Animasi Kartu Menu saat Disentuh (Hover) */
+.menu-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(255, 182, 193, 0.3);
+}
+
+/* Efek Zoom Foto Produk */
+.img-zoom {
+    transition: transform 0.6s ease;
+}
+.menu-card:hover .img-zoom {
+    transform: scale(1.1);
+}
+
+/* Menghilangkan batang scroll di kategori */
+.no-scrollbar::-webkit-scrollbar { 
+    display: none; 
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
